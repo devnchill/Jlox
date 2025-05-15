@@ -40,5 +40,8 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "com.jlox.App"
+    mainClass = "com.craftinginterpreters.lox.Lox"
+}
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
 }
