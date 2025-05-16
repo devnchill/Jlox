@@ -139,9 +139,8 @@ class Scanner {
           identifier();
         } else {
           Lox.error(line, "Unexpected character.");
+          break;
         }
-        Lox.error(line, "Unexpected Character.");
-        break;
     }
   }
 
